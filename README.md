@@ -10,3 +10,5 @@ view.shadowLayer.shadow = Shadow(preset: .depth1)
 view.shadowLayer.useDeviceMotionToCastShadow = true
 addSubview(view)
 ```
+
+<img src="docs_/button.gif" width=70 alt="screen" />
