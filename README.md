@@ -11,4 +11,4 @@ view.shadowLayer.useDeviceMotionToCastShadow = true
 addSubview(view)
 ```
 
-<img src="docs_/button.gif" width=70 alt="screen" />
+<img src="docs_/button.gif" width=140 alt="screen" />
