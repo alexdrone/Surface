@@ -12,6 +12,6 @@ view.shadowLayer.useDeviceMotionToCastShadow = true
 addSubview(view)
 ```
 
-The casted shadows moves accordingly to the device horizontal axis.
+The cast shadows moves accordingly to the device horizontal axis.
 
 <img src="docs_/button.gif" width=140 alt="screen" />
