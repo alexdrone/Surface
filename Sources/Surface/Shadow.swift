@@ -141,7 +141,6 @@ public struct _ShadowPair {
   }
 }
 
-@available(iOS 13.0, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
 public extension CALayer {
   /// Shadow format (as used in most design tools such as Sketch).
   struct _CanonicalShadowFormat {
