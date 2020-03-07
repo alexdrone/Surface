@@ -4,7 +4,6 @@ import UIKit
 
 private let _sharedMotionManager: CMMotionManager = CMMotionManager()
 
-@available(iOS 13.0, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
 final class _MotionManager {
 
   private struct WeakLayerRef { weak var layer: CALayer? }

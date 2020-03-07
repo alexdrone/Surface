@@ -3,7 +3,6 @@ import CoreMotion
 
 // MARK: - Extension
 
-@available(iOS 13.0, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
 public extension CALayer {
   /// The high-level shadow argument.
   var shadow: Shadow {
@@ -41,7 +40,6 @@ public extension CALayer {
 
 // MARK: _CALayerAssociatedContainer
 
-@available(iOS 13.0, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
 final class _CALayerAssociatedContainer {
   /// A reference to the CALayer.
   private weak var _layer: CALayer?
@@ -97,7 +95,6 @@ final class _CALayerAssociatedContainer {
   }
 }
 
-@available(iOS 13.0, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
 extension CALayer {
   /// Layer elevation/ animation state.
   var _containerRef: _CALayerAssociatedContainer {

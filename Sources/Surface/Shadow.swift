@@ -1,6 +1,5 @@
 import UIKit
 
-@available(iOS 13.0, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
 public struct Shadow {
   /// Default shadow descriptor.
   public let lightInterfaceStyleShadow: _ShadowPair
@@ -130,7 +129,6 @@ public struct Shadow {
   }
 }
 
-@available(iOS 13.0, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
 public struct _ShadowPair {
   /// The overlay (highlight) shadow.
   public let top: CALayer._CanonicalShadowFormat?

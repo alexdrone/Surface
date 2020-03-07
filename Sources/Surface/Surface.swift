@@ -1,6 +1,5 @@
 import UIKit
 
-@available(iOS 13.0, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
 open class SurfaceView: UIView {
   /// Returns its layer properly casted to `SurfaceLayer`.
   open var surfaceLayer: SurfaceLayer { layer as! SurfaceLayer }
@@ -11,7 +10,6 @@ open class SurfaceView: UIView {
   }
 }
 
-@available(iOS 13.0, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
 public final class SurfaceLayer: CALayer {
   /// The shadow applied to the overlay layer.
   public var _appliedOverlayLayerShadow:  CALayer._CanonicalShadowFormat {

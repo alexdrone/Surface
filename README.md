@@ -7,7 +7,7 @@
 let view = SurfaceView()
 view.frame = ...
 view.cornerRadius = ...
-view.shadowLayer.shadow = Shadow(preset: .depth1)
+view.shadowLayer.shadow = Shadow(preset: .convex1)
 view.shadowLayer.useDeviceMotionToCastShadow = true
 addSubview(view)
 ```

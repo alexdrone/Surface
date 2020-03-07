@@ -1,34 +1,49 @@
 import UIKit
 
 public enum DepthPreset {
+  case concave5
+  case concave4
+  case concave3
+  case concave2
+  case concave1
   case none
-  case depth1
-  case depth2
-  case depth3
-  case depth4
-  case depth5
+  case convex1
+  case convex2
+  case convex3
+  case convex4
+  case convex5
 
   /// Blur value for this depth.
   public var blur: CGFloat {
     switch self {
+    case .concave5: return 16
+    case .concave4: return 8
+    case .concave3: return 4
+    case .concave2: return 2
+    case .concave1: return 1
     case .none: return 0
-    case .depth1: return 1
-    case .depth2: return 2
-    case .depth3: return 4
-    case .depth4: return 8
-    case .depth5: return 16
+    case .convex1: return 1
+    case .convex2: return 2
+    case .convex3: return 4
+    case .convex4: return 8
+    case .convex5: return 16
     }
   }
 
   /// Offset value for this depth.
   public var offset: CGFloat {
     switch self {
+    case .concave5: return -8
+    case .concave4: return -4
+    case .concave3: return -2
+    case .concave2: return -1
+    case .concave1: return -0.5
     case .none: return 0
-    case .depth1: return 0.5
-    case .depth2: return 1
-    case .depth3: return 2
-    case .depth4: return 4
-    case .depth5: return 8
+    case .convex1: return 0.5
+    case .convex2: return 1
+    case .convex3: return 2
+    case .convex4: return 4
+    case .convex5: return 8
     }
   }
 }
@@ -53,7 +68,6 @@ public struct Defaults {
 }
 
 /// Default system background color.
-@available(iOS 13.0, macOS 10.15, watchOS 6.0, tvOS 13.0, *)
 public func systemBackground(shouldReactToIntefaceStyleChange: Bool = true) -> UIColor {
   let isDarkAppearance =
     UIScreen.main.traitCollection.userInterfaceStyle == .dark && shouldReactToIntefaceStyleChange
