@@ -1,4 +1,4 @@
-# ＳＵＲＦＡＣＥ [![Swift](https://img.shields.io/badge/swift-5.1-orange.svg?style=flat)](#)
+# Surface [![Swift](https://img.shields.io/badge/swift-5.1-orange.svg?style=flat)](#)
 
 **Neumorphic** shadow example:
 
@@ -6,9 +6,9 @@
 
 let view = SurfaceView()
 view.frame = ...
-view.cornerRadius = ...
-view.shadowLayer.shadow = Shadow(preset: .convex1)
-view.shadowLayer.useDeviceMotionToCastShadow = true
+view.layer.cornerRadius = ...
+view.surfaceLayer.shadow = Shadow(preset: .convex1)
+view.surfaceLayer.useDeviceMotionToCastShadow = true
 addSubview(view)
 ```
 
